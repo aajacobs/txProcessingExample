@@ -1,0 +1,32 @@
+{
+  "txId": "1234",
+  "category": "response",
+  "payload": {
+    "headers": {
+      "date": "Thu, 14 Feb 2019 14:41:08 GMT",
+      "server": "Jetty(9.4.12.v20180830)",
+      "transferEncoding": "chunked",
+      "keepAlive": "timeout=5, max=100",
+      "xPoweredBy": "HAPI FHIR 3.5.0 REST Server (FHIR Server; FHIR 3.0.1/DSTU3)",
+      "contentLocation": "https://fhir.gtmm.us/baseDstu3/Claim/2/_history/1",
+      "contentEncoding": "gzip",
+      "contentLength": "483",
+      "etag": "W/\"1\"",
+      "location": "https://fhir.gtmm.us/baseDstu3/Claim/2/_history/1",
+      "connection": "Keep-Alive",
+      "lastModified": "Thu, 14 Feb 2019 14:41:08 GMT",
+      "contentType": "application/fhir+json;charset=utf-8"
+    },
+    "protocol": "HTTP/0.0",
+    "metadata": {
+      "timestamp": "2019-02-14T14:41:08.417Z"
+    },
+    "reasonPhrase": "Created",
+    "body": {
+      "type": "base64FromBytes",
+      "value": "H4sIAAAAAAAAAJ1U32/bIBB+71+B2OOaCLBdJXnbqkqLljWVk2mapjwgfG6RMPYwiVRV+d+HcWri/GjTvSC4++7uu4+DlyuEsIG6XBsBy+cK8AThW8Vlga8bl8waA2sPBVjuji9u704bMLUs9dQjqEc4q+K1/Vll3EIbSeh4QNiAxksaT2I6IaNhlESfCZkQgl3I1mcWpbZcah/zxydqi5wg92C4sNK6ymB2RTueMfbn7fU7KbiVoO1hNA0GzQvoqOzn8t6cF1I9NyE/pt/vuijve5Qb0L1Qb07nX+/SJd4zrrr9drdbdeUfQWeuO1cgh4IrCMR4lrlu6vPchLSe2bf5bDZd9LnV1l1L47z/3XdUpXOp2zLzXkpjNsbH9C7T9o3rYR8XeAFcXyTwopD26R19L2oghRyM4SqFv2uoj4YkCgYDQlZ+kM42YppkoIXP/Cn+X1FnpeCNpIdkkiNB3dWieZ5LcXJmAjes3Gs7UBEnZETREpRa10P0xcm8hr72NzejAWMkRvelRmk2DP2sAq4bwV9P0gJ6cJ+JrvfynBnDgyEckTFJKIvYa41WsWb1tXC1e8Tdf9TXmobPpTLlRrbv6SSUBajZXf45aBSgORdStZ2ehCYeerX9B5rwxG5iBQAA"
+    },
+    "bodyBase64": "H4sIAAAAAAAAAJ1U32/bIBB+71+B2OOaCLBdJXnbqkqLljWVk2mapjwgfG6RMPYwiVRV+d+HcWri/GjTvSC4++7uu4+DlyuEsIG6XBsBy+cK8AThW8Vlga8bl8waA2sPBVjuji9u704bMLUs9dQjqEc4q+K1/Vll3EIbSeh4QNiAxksaT2I6IaNhlESfCZkQgl3I1mcWpbZcah/zxydqi5wg92C4sNK6ymB2RTueMfbn7fU7KbiVoO1hNA0GzQvoqOzn8t6cF1I9NyE/pt/vuijve5Qb0L1Qb07nX+/SJd4zrrr9drdbdeUfQWeuO1cgh4IrCMR4lrlu6vPchLSe2bf5bDZd9LnV1l1L47z/3XdUpXOp2zLzXkpjNsbH9C7T9o3rYR8XeAFcXyTwopD26R19L2oghRyM4SqFv2uoj4YkCgYDQlZ+kM42YppkoIXP/Cn+X1FnpeCNpIdkkiNB3dWieZ5LcXJmAjes3Gs7UBEnZETREpRa10P0xcm8hr72NzejAWMkRvelRmk2DP2sAq4bwV9P0gJ6cJ+JrvfynBnDgyEckTFJKIvYa41WsWb1tXC1e8Tdf9TXmobPpTLlRrbv6SSUBajZXf45aBSgORdStZ2ehCYeerX9B5rwxG5iBQAA",
+    "statusCode": 201
+  }
+}

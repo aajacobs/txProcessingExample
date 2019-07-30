@@ -1,0 +1,27 @@
+{
+  "txId": "1234",
+  "category": "validationError",
+  "payload": [
+    {
+      "location": "Mex",
+      "source": "list2",
+      "message": "Error1",
+      "type": "other",
+      "lineNumber": 1
+    },
+    {
+      "location": "Mex",
+      "source": "list1",
+      "message": "Error2",
+      "type": "metadata",
+      "lineNumber": 2
+    },
+    {
+      "location": "US",
+      "source": "list1",
+      "message": "Error3",
+      "type": "metadata",
+      "lineNumber": 3
+    }
+  ]
+}

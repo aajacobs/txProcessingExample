@@ -1,0 +1,13 @@
+{
+  "txId": "1234",
+  "category": "validationError",
+  "payload": [
+    {
+      "location": "Mex",
+      "source": "list2",
+      "message": "Error4",
+      "type": "other",
+      "lineNumber": 1
+    }
+  ]
+}

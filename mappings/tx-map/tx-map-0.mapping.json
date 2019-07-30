@@ -1,0 +1,10 @@
+{
+  "language" : "zxx",
+  "name" : "tx-map",
+  "description" : "",
+  "version" : 0,
+  "targetEntityType" : "transaction-0.0.1/transaction",
+  "sourceContext" : "//",
+  "sourceURI" : "",
+  "properties" : { }
+}

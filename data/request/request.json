@@ -1,0 +1,96 @@
+{
+  "txId": "1234",
+  "category": "request",
+  "payload": {
+    "headers": {
+      "authorization": "Basic bXVsZS1hZG1pbjptdWxlLWFkbWluMTEh",
+      "acceptEncoding": "gzip",
+      "host": "mule.gtmm.us:8790",
+      "contentLength": "703",
+      "connection": "Keep-Alive",
+      "userAgent": "unirest-java/1.3.11",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    "protocol": "HTTP/1.1",
+    "metadata": {
+      "timestamp": "2019-02-14T14:41:08.368Z"
+    },
+    "method": "POST",
+    "queryParameters": {},
+    "sendingHost": "3.87.177.16",
+    "body": {
+      "type": "jsonFromBytes",
+      "value": {
+        "contained": [
+          {
+            "address": [
+              {
+                "city": "HOLLIS",
+                "postalCode": "11429",
+                "state": "NY"
+              }
+            ],
+            "gender": "female",
+            "name": [
+              {
+                "given": ["ROBERT"],
+                "family": "MIKE"
+              }
+            ],
+            "id": "1",
+            "resourceType": "Patient"
+          },
+          {
+            "name": [
+              {
+                "given": ["Smith"],
+                "family": "Sean"
+              }
+            ],
+            "id": "2",
+            "resourceType": "Practitioner"
+          },
+          {
+            "recipient": [
+              {
+                "reference": "#4"
+              }
+            ],
+            "id": "3",
+            "resourceType": "ReferralRequest"
+          },
+          {
+            "id": "4",
+            "resourceType": "Practitioner"
+          },
+          {
+            "address": {
+              "city": "White Plains",
+              "line": ["5081 Tellus. Avenue", "668-2204 Non Rd."],
+              "postalCode": "809051232",
+              "state": "NY"
+            },
+            "name": "NY Office",
+            "id": "5",
+            "resourceType": "Location"
+          }
+        ],
+        "referral": {
+          "reference": "#3"
+        },
+        "provider": {
+          "reference": "#2"
+        },
+        "patient": {
+          "reference": "#1"
+        },
+        "facility": {
+          "reference": "#5"
+        },
+        "resourceType": "Claim"
+      }
+    },
+    "bodyBase64": "eyJjb250YWluZWQiOlt7ImFkZHJlc3MiOlt7ImNpdHkiOiJIT0xMSVMiLCJwb3N0YWxDb2RlIjoiMTE0MjkiLCJzdGF0ZSI6Ik5ZIn1dLCJnZW5kZXIiOiJmZW1hbGUiLCJuYW1lIjpbeyJnaXZlbiI6WyJST0JFUlQiXSwiZmFtaWx5IjoiTUlLRSJ9XSwiaWQiOiIxIiwicmVzb3VyY2VUeXBlIjoiUGF0aWVudCJ9LHsibmFtZSI6W3siZ2l2ZW4iOlsiU21pdGgiXSwiZmFtaWx5IjoiU2VhbiJ9XSwiaWQiOiIyIiwicmVzb3VyY2VUeXBlIjoiUHJhY3RpdGlvbmVyIn0seyJyZWNpcGllbnQiOlt7InJlZmVyZW5jZSI6IiM0In1dLCJpZCI6IjMiLCJyZXNvdXJjZVR5cGUiOiJSZWZlcnJhbFJlcXVlc3QifSx7ImlkIjoiNCIsInJlc291cmNlVHlwZSI6IlByYWN0aXRpb25lciJ9LHsiYWRkcmVzcyI6eyJjaXR5IjoiV2hpdGUgUGxhaW5zIiwibGluZSI6WyI1MDgxIFRlbGx1cy4gQXZlbnVlIiwiNjY4LTIyMDQgTm9uIFJkLiJdLCJwb3N0YWxDb2RlIjoiODA5MDUxMjMyIiwic3RhdGUiOiJOWSJ9LCJuYW1lIjoiTlkgT2ZmaWNlIiwiaWQiOiI1IiwicmVzb3VyY2VUeXBlIjoiTG9jYXRpb24ifV0sInJlZmVycmFsIjp7InJlZmVyZW5jZSI6IiMzIn0sInByb3ZpZGVyIjp7InJlZmVyZW5jZSI6IiMyIn0sInBhdGllbnQiOnsicmVmZXJlbmNlIjoiIzEifSwiZmFjaWxpdHkiOnsicmVmZXJlbmNlIjoiIzUifSwicmVzb3VyY2VUeXBlIjoiQ2xhaW0ifQ==",
+    "uri": "/baseDstu3/Claim"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "language" : "zxx",
+  "name" : "tx-map",
+  "description" : "",
+  "version" : 3,
+  "targetEntityType" : "transaction-0.0.1/transaction",
+  "sourceContext" : "//",
+  "sourceURI" : "0dcd503d-1dfc-4e35-8a00-ae4f6cf49c61.json",
+  "properties" : {
+    "transactionId" : {
+      "sourcedFrom" : "txId"
+    },
+    "txAPIValErrors" : {
+      "sourcedFrom" : "valErrors"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "transaction" : {
+    "x" : 370,
+    "y" : 112,
+    "width" : 472,
+    "height" : 216,
+    "vertices" : { }
+  },
+  "TxAPIValErrors" : {
+    "x" : 618,
+    "y" : 401,
+    "width" : 350,
+    "height" : 232,
+    "vertices" : { }
+  }
+}

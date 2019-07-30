@@ -1,0 +1,171 @@
+{
+  "name" : "tx",
+  "description" : "null",
+  "batchSize" : 1,
+  "threadCount" : 1,
+  "stopOnError" : false,
+  "options" : { },
+  "version" : 0,
+  "steps" : {
+    "1" : {
+      "name" : "ingestResponse",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ "rawTx" ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "tx"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "ingestResponse", "rawTx" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "/Users/ajacobs/MarkLogic/git/gtri-tesa-flow/data/response",
+        "inputFileType" : "json",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      },
+      "mappingStep" : false,
+      "customStep" : false,
+      "mappingName" : null
+    },
+    "2" : {
+      "name" : "ingestRequest",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ "rawTx" ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "tx"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "ingestRequest", "rawTx" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "/Users/ajacobs/MarkLogic/git/gtri-tesa-flow/data/request",
+        "inputFileType" : "json",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      },
+      "mappingStep" : false,
+      "customStep" : false,
+      "mappingName" : null
+    },
+    "3" : {
+      "name" : "ingestMetadata",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ "rawTx" ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "tx"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "ingestMetadata", "rawTx" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "/Users/ajacobs/MarkLogic/git/gtri-tesa-flow/data/metadata",
+        "inputFileType" : "json",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      },
+      "mappingStep" : false,
+      "customStep" : false,
+      "mappingName" : null
+    },
+    "4" : {
+      "name" : "ingestError",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ "rawTx" ],
+        "headers" : {
+          "sources" : [ {
+            "name" : "tx"
+          } ],
+          "createdOn" : "currentDateTime",
+          "createdBy" : "currentUser"
+        },
+        "sourceQuery" : "cts.collectionQuery([])",
+        "collections" : [ "ingestError", "rawTx" ],
+        "permissions" : "rest-reader,read,rest-writer,update",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-STAGING"
+      },
+      "customHook" : { },
+      "retryLimit" : null,
+      "batchSize" : null,
+      "threadCount" : null,
+      "stepDefinitionName" : "default-ingestion",
+      "stepDefinitionType" : "INGESTION",
+      "fileLocations" : {
+        "inputFilePath" : "/Users/ajacobs/MarkLogic/git/gtri-tesa-flow/data/txErrorsJSON",
+        "inputFileType" : "json",
+        "outputURIReplacement" : "",
+        "separator" : ","
+      },
+      "mappingStep" : false,
+      "customStep" : false,
+      "mappingName" : null
+    },
+    "5" : {
+      "name" : "harmonizeTx",
+      "description" : "",
+      "options" : {
+        "additionalCollections" : [ ],
+        "sourceQuery" : "cts.collectionQuery([\"rawTx\"])",
+        "targetEntity" : "transaction",
+        "collections" : [ "harmonizeTx", "transaction" ],
+        "sourceDatabase" : "data-hub-STAGING",
+        "sourceCollection" : "rawTx",
+        "outputFormat" : "json",
+        "targetDatabase" : "data-hub-FINAL"
+      },
+      "customHook" : null,
+      "retryLimit" : 0,
+      "batchSize" : 0,
+      "threadCount" : 0,
+      "stepDefinitionName" : "harmonizeTx",
+      "stepDefinitionType" : "CUSTOM",
+      "modulePath" : "/custom-modules/custom/harmonizeTx/main.sjs",
+      "mappingStep" : false,
+      "customStep" : true,
+      "mappingName" : null
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "language" : "zxx",
+  "name" : "harmonizeTx",
+  "description" : "",
+  "type" : "CUSTOM",
+  "version" : 6,
+  "options" : {
+    "additionalCollections" : [ ],
+    "sourceQuery" : "cts.collectionQuery([\"rawTx\"])",
+    "targetEntity" : "transaction",
+    "collections" : [ "harmonizeTx", "transaction" ],
+    "sourceDatabase" : "data-hub-STAGING",
+    "sourceCollection" : "rawTx",
+    "outputFormat" : "json",
+    "targetDatabase" : "data-hub-FINAL"
+  },
+  "customHook" : { },
+  "modulePath" : "/custom-modules/custom/harmonizeTx/main.sjs",
+  "retryLimit" : 0,
+  "batchSize" : 100,
+  "threadCount" : 4
+}

@@ -1,0 +1,18 @@
+{
+  "txId": "1234",
+  "category": "metadata",
+  "payload": {
+    "createdTimestamp": 1550155268338,
+    "modelInfo": {
+      "apiVersion": "1.0",
+      "implVersion": "1.0"
+    },
+    "appLocation": "ec2-52-55-196-55.compute-1.amazonaws.com",
+    "integrationPlatformName": "Mule 3.9.0",
+    "appName": "HAPI FHIR",
+    "type": "org.gtri.gamest.util.flow.model.proxy.HttpProxyHandle"
+  },
+  "_etag": {
+    "$oid": "5c657e04857aba00062e230f"
+  }
+}
